@@ -39,10 +39,10 @@
 }
 
 .self-image {
-  width: 300px; /* 設定寬度 */
-  height: auto; /* 讓高度自適應 */
+  width: 300px;
+  height: auto; 
   display: block;
-  margin: 0 auto; /* 讓圖片水平置中 */
+  margin: 0 auto; 
   
 }
 
