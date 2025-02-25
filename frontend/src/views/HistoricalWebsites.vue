@@ -20,8 +20,16 @@
   </div>
 </template>
 
-<script>
-// TODO: Fetch websites data from API
+<script setup>
+import { ref, onMounted } from "vue";
+import axios from "axios";
+
+const websites = ref([]);
+
+onMounted(async () => {
+    const response = await axios.get("https://mch-dev.userwei.com//api/websites");
+    websites.value = response.data;
+});
 </script>
 
 <style scoped>
@@ -39,7 +47,10 @@
 }
 
 .websites-grid {
-  /* TODO: Add styles for a responsive grid layout */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* RWD 設計 */
+  gap: 16px; /* 格子間距 */
+  padding: 20px;
 }
 
 .website-card {

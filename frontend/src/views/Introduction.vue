@@ -3,17 +3,21 @@
     <header class="intro-header">
       <h2>自我介紹</h2>
       <p>
-        簡單自我介紹+本人圖片
-      </p>
+        Hi，我是楊豈東，目前就讀交大資工系大一， 去年參加過梅竹黑客松
+        ，覺得辦得很好，今年想來開發部學習，希望能遇到志同道合的朋友，在軟體開發的路上一起學習。
         
+        
+        <img src="/images/self.jpg"alt="self Image"class="self-image">
+
+      </p>
       
     </header>
     <section class="about-section">
       <h3>個人資訊補充</h3>
       <ul>
-        <li>好棒棒1</li>
-        <li>好棒棒2</li>
-        <li>好棒棒3</li>
+        <li>我很菜</li>
+        <li>喜歡打桌球</li>
+        <li>喜歡看動漫</li>
       </ul>
       
     </section>
@@ -34,6 +38,13 @@
   border-radius: 10px;
 }
 
+.self-image {
+  width: 300px; /* 設定寬度 */
+  height: auto; /* 讓高度自適應 */
+  display: block;
+  margin: 0 auto; /* 讓圖片水平置中 */
+  
+}
 
 
 .intro-text h2 {
